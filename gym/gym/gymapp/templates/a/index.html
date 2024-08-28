@@ -1,0 +1,302 @@
+{% extends "a/layout.html" %}
+{% block body %}
+{% load static %}
+
+<div class="hero">
+  <div>
+    <h1>Be the best you TODAY</h1>
+    <h3>It doesn’t matter if your goal is to get stronger, burn fat, or to just stay fit our world class coaches will guide you every step of the way. Your fitness journey begins here</h3>
+    <button onclick="smoothScroll('#contus')">Join Today</button>
+  </div>
+</div>
+<div class="centered-container">
+<h2 id="abtus">About Us</h2>
+  </div>
+
+<div class="offers-container">
+    <!-- Offer 1 (Left) -->
+    <div class="offer-card offer-left">
+        <div class="offer-image">
+            <img src="{% static 'images/womensmonth.jpg' %}" alt="Strength Training Program">
+        </div>
+        <div class="offer-content">
+               <h3>The Ultimate Women’s Fitness Guide</h3>
+             <p class="offer-note">2024/03/15</p>
+           <p class="offer-description">From young adults to golden years, we celebrate every woman embracing their journey! This Women’s Month... </p>
+            <br>
+            <button class="read-more-btn" onclick="smoothScroll('#contus')">Read More</button>
+        </div>
+    </div>
+
+    <!-- Offer 2 -->
+    <div class="offer-card offer-center">
+        <div class="offer-image">
+            <img src="{% static 'images/7758473f-ffb2-43bd-8297-f12fa9ba2d49.jpeg' %}" alt="El Gimnasio Overview">
+        </div>
+        <div class="offer-content">
+            <h3>Welcome to El Gimnasio</h3>
+             <p class="offer-note">2024/01/19</p>
+           <p class="offer-description">Experience a fitness journey where every step is empowering and invigorating. Our gym offers a dynamic environment tailored to support your goals with state-of-the-art equipment and personalized guidance...</p>
+            <br>
+            <button class="read-more-btn" onclick="smoothScroll('#contus')">Read More</button>
+        </div>
+    </div>
+
+    <!-- Offer 3 (Right) -->
+    <div class="offer-card offer-right">
+        <div class="offer-image">
+            <img src="https://media.theeverygirl.com/wp-content/uploads/2021/05/the-everygirl-easy-recipes-1080-900.jpg" alt="Personal Training Package">
+        </div>
+        <div class="offer-content">
+            <h3>The Comprehensive Dieting Blueprint</h3>
+<p class="offer-note">2024/07/02</p>
+            <p class="offer-description">From beginners learning about healthy eating to experts perfecting their nutrition, we celebrate...</p>
+            <br>
+            <button class="read-more-btn" onclick="smoothScroll('#contus')">Read More</button>
+        </div>
+    </div>
+</div>
+
+<h4>Our Space</h4>
+<div class="image-row" id="irc">
+  <img src="https://watermark.lovepik.com/photo/20211123/large/lovepik-gym-picture_500868937.jpg">
+  <img src="https://storage.kempinski.com/cdn-cgi/image/w=1920,f=auto,g=auto,fit=scale-down/ki-cms-prod/images/8/6/6/6/166668-1-eng-GB/9f7e538a2343-73664471_4K.jpg">
+  <img src="https://storage.kempinski.com/cdn-cgi/image/w=1920,f=auto,g=auto,fit=scale-down/ki-cms-prod/images/9/1/6/7/1027619-1-eng-GB/67f82ce50fee-74678780_4K.jpg">
+</div>
+<div class="centered-container">
+    <br>
+<h2 id="outeam">Our Team</h2>
+</div>
+<div class="image-row">
+  <div class="team-member" id="p1">
+    <img src="https://img.freepik.com/free-photo/handsome-black-man-is-engaged-gym_1157-29633.jpg">
+    <div class="overlay">
+      <h3>Ayanda White</h3>
+      <p>Fitness Coach</p>
+    </div>
+  </div>
+  <div class="team-member" id="p2">
+    <img src="https://us.123rf.com/450wm/sasamihajlovic/sasamihajlovic1912/sasamihajlovic191200014/135563047-strong-muscle-man-doing-pull-ups-in-outdoor-gym.jpg?ver=6">
+    <div class="overlay">
+      <h3>Luis Van de Merwe</h3>
+      <p>Strength Trainer</p>
+    </div>
+  </div>
+  <div class="team-member" id="p3">
+    <img src="https://images.squarespace-cdn.com/content/v1/58501b0cf5e23149e5589e12/1671264360055-9CI7108CEO42MRVY2CRU/unsplash-image-EuwD039Svug.jpg?format=500w">
+    <div class="overlay">
+      <h3>Emily Johnson</h3>
+      <p>Yoga Instructor</p>
+    </div>
+  </div>
+</div>
+<div class="image-row">
+  <div class="team-member" id="p4">
+    <img src="https://img.freepik.com/free-photo/young-sports-man-training-gym_1303-20739.jpg">
+    <div class="overlay">
+      <h3>Michael Brown</h3>
+      <p>Cardio Specialist</p>
+    </div>
+  </div>
+  <div class="team-member" id="p5">
+    <img src="https://img.freepik.com/premium-photo/beautiful-young-african-american-woman-gym-female-athlete-bodybuilder-resting-after-crossfit-workout-photo-with-copy-space_177786-4523.jpg">
+    <div class="overlay">
+      <h3>Sarah Wilson</h3>
+      <p>Personal Trainer</p>
+    </div>
+  </div>
+  <div class="team-member" id="p6">
+    <img src="https://us.123rf.com/450wm/chrisnemes/chrisnemes1905/chrisnemes190500029/125177667-young-strong-man-in-gym-doing-chest-cable-workout.jpg">
+    <div class="overlay">
+      <h3>David Lee</h3>
+      <p>Nutritionist</p>
+    </div>
+  </div>
+</div>
+<div class="centered-container">
+<h2 id="class">Classes</h2>
+</div>
+<div class="class-row">
+  <img src="https://wallpapers.com/images/hd/two-women-in-a-kickboxing-sparring-match-fzmnol0fn41xnkou.jpg" alt="Kickboxing Image">
+  <div class="class-text">
+    <p id="rr">Kickboxing</p>
+    <h3>Learn to defend yourself while getting fit with our Kickboxing class</h3>
+    <div class="check-list">
+      <p class="check-text"><i class="gg-check-o"></i>Just 1:30 minutes long</p>
+      <p class="check-text"><i class="gg-check-o"></i>Warm up and training included</p>
+      <p class="check-text"><i class="gg-check-o"></i>Enjoyable</p>
+    </div>
+  </div>
+</div>
+
+<div class="class-row">
+  <img src="https://images.squarespace-cdn.com/content/v1/61ae8ea20c85a87b23a658b6/1e97b221-11f6-4bc4-a4fd-2fabaa767b13/424A0724.jpg" alt="Yoga Image">
+  <div class="class-text">
+    <p id="rr">Yoga</p>
+    <h3>Find your inner peace and enhance flexibility with our Yoga class</h3>
+     <div class="check-list">
+    <p class="check-text"><i class="gg-check-o"></i>Holistic mind-body workouts</p>
+    <p class="check-text"><i class="gg-check-o"></i>Experienced instructors </p>
+    <p class="check-text"><i class="gg-check-o"></i>Calming environment with serene ambiance </p>
+  </div>
+</div>
+</div>
+
+<div class="class-row">
+  <img src="https://hiddengym.net/wp-content/uploads/2020/08/HIIT-Blog-1.jpg" alt="HIIT Image">
+  <div class="class-text">
+    <p id="rr">HIIT</p>
+    <h3>Burn fat and boost endurance with our intense HIIT(High-Intensity Interval Training) sessions</h3>
+     <div class="check-list">
+    <p class="check-text"><i class="gg-check-o"></i>Short intense workouts </p>
+    <p class="check-text"><i class="gg-check-o"></i>Combination of cardio and strength training</p>
+    <p class="check-text"><i class="gg-check-o"></i>Dynamic and energetic atmosphere</p>
+  </div>
+</div>
+</div>
+
+<div class="class-row">
+  <img src="https://static.vecteezy.com/system/resources/previews/031/597/017/large_2x/the-gym-features-rows-of-dumbbells-offering-a-wide-range-of-weights-vertical-mobile-wallpaper-ai-generated-free-photo.jpg" alt="Strength Training Image">
+  <div class="class-text">
+    <p id="rr">Strength Training</p>
+    <h3>Build muscle and increase strength with our expert-led Strength Training class</h3>
+     <div class="check-list">
+    <p class="check-text"><i class="gg-check-o"></i>State-of-the-art equipment</p>
+    <p class="check-text"><i class="gg-check-o"></i>Personalized training plans </p>
+    <p class="check-text"><i class="gg-check-o"></i>Supportive community</p>
+  </div>
+</div>
+</div>
+<!-- Crimson Background Section -->
+  <h6 style="color:black ; cursor: default;" id="memb">.</h6>
+<div class="crimson-background">
+
+
+  <div class="membership-container">
+    <!-- Membership Offer 1 -->
+    <div class="membership-offer">
+      <h3>Basic Membership</h3>
+     <p class="price"><span style="color:crimson; font-size:30px;">R600</span><span>/pm</span></p>
+      <p class="check-text"><i class="gg-check-o"></i>Access to all gym facilities</p>
+      <p class="check-text"><i class="gg-check-o"></i>Free fitness assessment</p>
+      <p class="check-text"><i class="gg-check-o"></i>Monthly check-ins</p>
+       <br>
+      <p id="pp">Charges every month </p>
+      <p id="pp">unless you cancel</p>
+      <br>
+      <button onclick="smoothScroll('#contus')">Join Now</button>
+    </div>
+
+    <!-- Membership Offer 2 -->
+    <div class="membership-offer">
+      <h3>Premium Membership</h3>
+      <p class="price"><span style="color:crimson; font-size:30px;">R1200</span><span>/pm</span></p>
+      <p class="check-text"><i class="gg-check-o"></i>Includes Basic benefits</p>
+      <p class="check-text"><i class="gg-check-o"></i>Personalized training plan</p>
+      <p class="check-text"><i class="gg-check-o"></i>Access to all classes</p>
+      <br>
+      <p id="pp">Charges every month </p>
+      <p id="pp">unless you cancel</p>
+      <br>
+      <button onclick="smoothScroll('#contus')">Join Now</button>
+
+    </div>
+
+    <!-- Membership Offer 3 -->
+    <div class="membership-offer">
+      <h3>Elite Membership</h3>
+      <p class="price"><span style="color:crimson; font-size:30px;">R1600</span><span>/pm</span></p>
+      <p class="check-text"><i class="gg-check-o"></i>Includes Premium benefits</p>
+      <p class="check-text"><i class="gg-check-o"></i>One-on-one coaching</p>
+      <p class="check-text"><i class="gg-check-o"></i>Nutrition guidance</p>
+       <br>
+      <p id="pp">Charges every month </p>
+      <p id="pp">unless you cancel</p>
+      <br>
+      <button onclick="smoothScroll('#contus')">Join Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="black-background">
+  <div class="form-image-container">
+    <div class="form-container">
+      <form id="contus">
+        <input type="text" id="fname" name="fname" placeholder="Name" class="form-input"><br>
+        <input type="email" id="email" name="email" placeholder="Email" class="form-input"><br>
+        <input type="number" id="number" name="number" placeholder="Number..." class="form-input"><br>
+
+      </form>
+      <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Membership Interest</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#home">Basic Membership</a>
+        <a href="#about">Premium Membership</a>
+        <a href="#contact">Elite Membership</a>
+      </div>
+    </div>
+    <button id="btn">Join Now</button>
+  </div>
+
+    <div class="imagecc">
+<img src="{% static 'images/ssLocation.png' %}" alt="Location Image">
+
+    </div>
+  </div>
+</div>
+
+
+<p id="pp">For more details, please contact us at info@elgimnasio.co.za</p>
+
+
+
+
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+function smoothScroll(targetId) {
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+        const targetPosition = targetElement.getBoundingClientRect().top;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition;
+        const duration = 1000; // Duration in milliseconds (1000ms = 1 second)
+        let startTime = null;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const run = ease(timeElapsed, startPosition, distance, duration);
+            window.scrollTo(0, run);
+            if (timeElapsed < duration) requestAnimationFrame(animation);
+        }
+
+        function ease(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+        }
+
+        requestAnimationFrame(animation);
+    }
+}
+
+</script>
+{% endblock %}

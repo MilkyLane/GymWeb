@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+
+    <title>{% block title %}Auctions{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dO0gN5nR7Uu8wKGoszM6IkTxGgTxp1z6P6bT2dH6+eF8xr5ktM1mVz7H2pU5Y+pZGVyX3erU6OerfTV13QtE8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/check-o.css' rel='stylesheet'>
+      <link rel="stylesheet" href="{% static 'a/style.css' %}">
+
+</head>
+<body>
+    <div>
+        <ul class="nav">
+             <li class="nav-item logo">
+                <a class="nav-link" href="{% url 'index' %}">
+                    <img src="{% static 'images/logob.png' %}" alt="El Gimnasio Logo">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'index' %}">
+                    <i class="fas fa-home"></i> Home
+                </a>
+            </li>
+            {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'logout' %}">Log Out</a>
+                </li>
+            {% else %}
+<li class="nav-item">
+    <a class="nav-link" href="#abtus" onclick="smoothScroll('#abtus')">About us</a>
+</li>
+
+                <li class="nav-item">
+                     <a class="nav-link" href="#outeam" onclick="smoothScroll('#outeam')">Our Team</a>
+                </li>
+             <li class="nav-item">
+    <a class="nav-link" href="#memb" onclick="smoothScroll('#memb')">Memberships</a>
+</li>
+                <li class="nav-item">
+           <a class="nav-link" href="#class" onclick="smoothScroll('#class')">Classes</a>
+                </li>
+             <li class="nav-item">
+            <button id="con" onclick="smoothScroll('#contus')">
+                <span >Contact Us</span>
+            </button>
+        </li>
+            {% endif %}
+        </ul>
+        <hr>
+        {% block body %}
+        {% endblock %}
+    </div>
+</body>
+</html>
