@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-8!110m!x7hml-4ap*l46rp0ii0azlu6vvi50^q22lmutep%zsn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['NickSCT.pythonanywhere.com']
 
 
 # Application definition
@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'storages',
+
 ]
 AUTH_USER_MODEL = 'gymapp.User'
 
@@ -103,6 +105,24 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+AWS_ACCESS_KEY_ID = ''
+AWS_SECRET_ACCESS_KEY = ''
+AWS_STORAGE_BUCKET_NAME = 'gymweb-nicksc'
+AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+AWS_S3_FILE_OVERWRITE = False
+
+STORAGES = {
+    "default":{
+        "BACKEND": "storages.backends.s3boto3.S3StaticStorage",
+
+    },
+    "staticfiles":{
+        "BACKEND":"storages.backends.s3boto3.S3StaticStorage"
+    }
+
+
+}
 
 
 # Internationalization
