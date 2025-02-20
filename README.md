@@ -2,6 +2,10 @@
 
 This repository contains a gym sign-up web page built using Django, designed to attract new members and simplify the registration process.
 
+## Page deployed using pythonanywhere:
+- https://nicksct.pythonanywhere.com
+
+
 ## Features
 - User authentication (login, logout, register).
 - View and book gym classes.
